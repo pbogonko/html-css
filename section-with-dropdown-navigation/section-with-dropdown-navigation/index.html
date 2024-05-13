@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown navigation</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="nav">
+            <div class="logo"><img src="./images/logo.svg" alt=""></div>
+            <div class="selection">
+                <div class="features">
+                    <div class="heading">
+                        Features
+                        <img  src="./images/icon-arrow-down.svg" alt="" class="fdown heading-img">
+                        <img class="up" src="./images/icon-arrow-up.svg" alt="" class="heading-img f-up">
+                    </div>
+                    <div class="content">
+
+                        <div class="options">
+                            <div class="todo">
+                                <div class="img">
+                                    <img src="./images/icon-todo.svg" alt="">
+                                </div>
+                                <div class="cont">Todo List</div>
+                            </div>
+                            <div class="todo">
+                                <div class="img">
+                                    <img src="./images/icon-calendar.svg" alt="">
+                                </div>
+                                <div class="cont">Calender</div>
+                            </div>
+                            <div class="todo">
+                                <div class="img">
+                                    <img src="./images/icon-reminders.svg" alt="">
+                                </div>
+                                <div class="cont">Reminder</div>
+                            </div>
+                            <div class="todo">
+                                <div class="img">
+                                    <img src="./images/icon-planning.svg" alt="">
+                                </div>
+                                <div class="cont">Planning</div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="history">
+                    <div class="heading">
+                        Company
+                        <img  src="./images/icon-arrow-down.svg" alt="" class="cdown heading-img">
+                        <img  src="./images/icon-arrow-up.svg" alt="" class="c-up heading-img">
+                    </div>
+                    <div class="content">
+
+                        <div class="com_options">
+                            <div class="todo">
+
+                                <div class="cont">History</div>
+                            </div>
+                            <div class="todo">
+
+                                <div class="cont">Our Team</div>
+                            </div>
+                            <div class="todo">
+
+                                <div class="cont">Blog</div>
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <!-- <select name="Features" id="">
+                    <option value="">
+                        <div class="todo">
+                            <img src="./images/icon-todo.svg" alt="">
+                            Todo List
+                        </div>
+                    </option>
+                    <option value="">
+                        <div class="todo">
+                            <div class="img"></div>
+                            Calender
+                        </div>
+                    </option>
+                    <option value="">
+                        <div class="todo">
+                            <div class="img"></div>
+                            Remainder
+                        </div>
+                    </option>
+                    <option value="">
+                        <div class="todo">
+                            <div class="img"></div>
+                            Planning
+                        </div>
+                    </option>
+                </select> -->
+
+                <!-- <select name="Company" id="">
+                    <option value="">History</option>
+                    <option value="">Our Team</option>
+                    <option value=""> Blog</option>
+                </select> -->
+                <div>Careers</div>
+                <div>about</div>
+
+            </div>
+
+
+
+
+        </div>
+        <div class="login-register">
+            <a class="login" href="">Login</a>
+            <a class='register' href="">Register</a>
+            </a>
+        </div>
+
+    </nav>
+    <div class="container">
+        <div class="main">
+            <div class="left">
+                <h1>Make <snap>remote Work</snap>
+                </h1>
+                <p> Get your team in sync, no matter your location. Streamline processes,
+                    create team rituals, and watch productivity soar.</p>
+                <button>Learn more</button>
+
+                <div class="footer">
+                    <img src="./images/client-databiz.svg" alt="">
+                    <img src="./images/client-audiophile.svg" alt="">
+                    <img src="./images/client-meet.svg" alt="">
+                    <img src="./images/client-maker.svg" alt="">
+                    <img src="" alt="">
+                </div>
+            </div>
+
+
+
+            <div class="right">
+                <img class='right-img' src="./images/image-hero-desktop.png" alt="">
+            </div>
+
+        </div>
+    </div>
+    <script>
+          let features_arr_down=document.querySelector('.fdown');
+          let Company_arr_Down=document.querySelector('.cdown');
+          let options=document.querySelector('.options');
+          let com_options=document.querySelector('.com_options')
+          features_arr_down.onclick=()=>{
+            options.classList.toggle('active');
+          }
+          Company_arr_Down.onclick=()=>{
+            com_options.classList.toggle('active');
+          }
+    </script>
+
+</body>
+
+</html>
